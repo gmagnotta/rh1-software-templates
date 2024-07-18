@@ -137,7 +137,7 @@ spec:
       action: publish:github
       input:
         allowedHosts: ['github.com']
-        repoUrl: "${{ parameters.repo.host }}?owner=${{ parameters.repo.owner }}&repo=${{parameters.component_id}}"
+        repoUrl: github.com?owner=${{ parameters.repo.owner }}&repo=${{parameters.component_id}}
         repoVisibility: public
 
     - id: register
@@ -177,7 +177,7 @@ spec:
       action: publish:github
       input:
         allowedHosts: ['github.com']
-        repoUrl: "${{ parameters.repo.host }}?owner=${{ parameters.repo.owner }}&repo=${{parameters.component_id}}-gitops"
+        repoUrl: github.com?owner=${{ parameters.repo.owner }}&repo=${{parameters.component_id}}-gitops
         title: gitops resources for ${{ parameters.component_id }}
         description: gitops resources for ${{ parameters.component_id }}
         sourcePath: ./tenant-gitops
@@ -190,7 +190,7 @@ spec:
         appName: ${{ parameters.component_id }}-bootstrap
         argoInstance: main
         namespace: janus-argocd
-        repoUrl: https://${{ parameters.repo.host }}/${{ parameters.repo.owner }}/${{ parameters.component_id }}-gitops.git
+        repoUrl: https://github.com/${{ parameters.repo.owner }}/${{ parameters.component_id }}-gitops.git
         path: 'argocd/'
 
   output:
