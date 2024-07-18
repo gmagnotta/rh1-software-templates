@@ -6,6 +6,6 @@ metadata:
 spec:
   type: url
   targets:
-     - https://gitlab-gitlab.apps.cluster-xwznq.sandbox781.opentlc.com/rhdh/rh1-software-templates/blob/main/scaffolder-templates/quarkus-stssc-template/template.yaml
-     - https://gitlab-gitlab.apps.cluster-xwznq.sandbox781.opentlc.com/rhdh/rh1-software-templates/blob/main/scaffolder-templates/register-component/template.yaml
+     - scaffolder-templates/quarkus-stssc-template/template.yaml
+     - scaffolder-templates/register-component/template.yaml
 
